@@ -1,0 +1,13 @@
+2024-08-17 19:42:54,247 - INFO - Processed ./data/input/Main.xlsx with Pandas into 18 files.
+2024-08-17 20:06:38,283 - INFO - Processed ./data/input/Main.xlsx with Pandas.
+2024-08-17 20:26:52,304 - INFO - Processed ./data/input/Main.xlsx with Pandas into 18 files.
+2024-08-17 20:32:07,656 - INFO - Processed ./data/input/202107-divvy-tripdata.csv with Pandas into 165 files.
+2024-08-17 20:34:42,888 - INFO - Processed ./data/input/202107-divvy-tripdata.csv with Pandas into 165 files.
+2024-08-17 20:45:45,500 - INFO - Processed ./data/input/Main.xlsx with Pandas into 18 files.
+2024-08-17 20:47:05,461 - INFO - Processed ./data/input/Main.xlsx with Pandas into 18 files.
+2024-08-18 15:40:22,913 - ERROR - Error processing ./data/input/202107-divvy-tripdata.csv: File size 146.90 MB exceeds the Pandas threshold of 100 MB. Processing stopped.
+2024-08-18 15:41:54,219 - ERROR - Error processing ./data/input/202107-divvy-tripdata.csv: File size 146.90 MB exceeds the Pandas threshold of 100 MB. Processing stopped.
+2024-08-18 15:44:50,158 - ERROR - Error processing ./data/input/202107-divvy-tripdata.csv: File size 146.90 MB exceeds the Pandas threshold of 100 MB. Processing stopped.
+2024-08-18 15:47:16,976 - ERROR - Error processing ./data/input/202107-divvy-tripdata.csv: File size 146.90 MB exceeds the Pandas threshold of 100 MB. Processing stopped.
+2024-08-18 15:48:53,025 - ERROR - Error processing ./data/input/202107-divvy-tripdata.csv: File size 146.90 MB exceeds the Pandas threshold of 100 MB. Processing stopped.
+2024-08-18 15:49:24,066 - INFO - Processed ./data/input/202107-divvy-tripdata.csv with Pandas into 165 files.
