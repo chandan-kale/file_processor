@@ -39,16 +39,19 @@ def main():
     # List all files in the input directory
     files = os.listdir(config['input_directory'])
     
+    if len(files) > 1:
+        logging.error('Multiple files detected. Only one file can be processed at a time.')
+        sys.exit(1)
+    
     if len(files) == 1:
-        # Process a single file without threading
+        # Process a single file
         file_path = os.path.join(config['input_directory'], files[0])
         process_file(file_path, config)
     else:
-        # Use a thread pool to process files concurrently
-        with ThreadPoolExecutor(max_workers=config['max_concurrent_files']) as executor:
-            for filename in files:
-                file_path = os.path.join(config['input_directory'], filename)
-                executor.submit(process_file, file_path, config)
+        logging.error('No files found to process.')
+        sys.exit(1)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
+
+

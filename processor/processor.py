@@ -5,6 +5,7 @@ import pandas as pd
 import polars as pl
 import shutil
 import yaml
+import sys
 import logging
 import time
 
@@ -144,7 +145,7 @@ def process_file(file_path, config):
         else:
 #            retry_on_failure(process_with_polars, file_path, config['output_directory'], config['rows_per_file'])
              raise Exception(f"File size {file_size_mb:.2f} MB exceeds the Pandas threshold of {config['pandas_threshold_mb']} MB. Processing stopped.")
-        
+             sys.exit(1)        
         # Move processed file to archive
         shutil.move(file_path, config['archive_directory'])
     except Exception as e:
